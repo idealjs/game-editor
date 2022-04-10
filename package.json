@@ -1,0 +1,21 @@
+{
+  "name": "@idealjs/mono-template",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "example"
+  ],
+  "repository": "git@github.com:idealjs/mono-template.git",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "lerna": "^4.0.0",
+    "ts-jest": "^26.5.6",
+    "ts-loader": "^9.2.8",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
