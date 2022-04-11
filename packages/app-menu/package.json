@@ -9,5 +9,9 @@
     "build": "tsc -p tsconfig.build.json",
     "build:webpack": "webpack -c webpack.config.js",
     "prepublishOnly": "rm -rf dist&yarn build:webpack"
+  },
+  "devDependencies": {
+    "effector": "^22.2.0",
+    "effector-react": "^22.0.6"
   }
 }
