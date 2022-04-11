@@ -22,7 +22,17 @@ const Editor = (props: IProps) => {
       }}
     >
       <Menubar
-        menus={[{ label: "File" }, { label: "Edit" }, { label: "Layout" }]}
+        menus={[
+          {
+            label: "File",
+            menus: [
+              { label: "New File" },
+              { label: "Open Recent", menus: [{ label: "abc" }] },
+            ],
+          },
+          { label: "Edit" },
+          { label: "Layout" },
+        ]}
       />
       <GrapeLayout factory={factory} layout={layout} />
     </div>

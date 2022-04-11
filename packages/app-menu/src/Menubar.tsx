@@ -1,8 +1,4 @@
-interface IMenu {
-  label: string;
-  shortKey?: string;
-  items?: IMenu[];
-}
+import Menu, { IMenu } from "./Menu";
 
 interface IProps {
   menus?: IMenu[];
@@ -12,9 +8,9 @@ const Menubar = (props: IProps) => {
   const { menus } = props;
 
   return (
-    <div style={{ display: "flex" }}>
+    <div style={{ display: "flex", position: "relative" }}>
       {menus?.map((menu) => {
-        return <div style={{ marginLeft: "4px" }}>{menu.label}</div>;
+        return <Menu key={menu.label} menu={menu} />;
       })}
     </div>
   );
