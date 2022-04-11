@@ -1,0 +1,22 @@
+{
+  "name": "@idealjs/game-editor",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p tsconfig.build.json",
+    "build:webpack": "webpack -c webpack.config.js",
+    "prepublishOnly": "rm -rf dist&yarn build:webpack"
+  },
+  "dependencies": {
+    "@idealjs/app-menu": "^1.0.0",
+    "@idealjs/grape-layout": "^1.8.1",
+    "effector": "^22.2.0",
+    "effector-react": "^22.0.6",
+    "html2canvas": "^1.4.1",
+    "immer": "^9.0.12",
+    "reselect": "^4.1.5"
+  }
+}
