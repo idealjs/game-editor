@@ -15,4 +15,5 @@ const Menubar = (props: IProps) => {
     </div>
   );
 };
+
 export default Menubar;
