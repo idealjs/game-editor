@@ -2,7 +2,7 @@ FROM electronuserland/builder:wine
 
 COPY .npmrc /
 
-COPY package.json yarn.lock /
+COPY package.json /
 
 RUN yarn
 
@@ -10,6 +10,6 @@ COPY . .
 
 RUN yarn electron:build
 
-RUN yarn build
+RUN yarn react:build
 
 CMD ["yarn", "build:win"]

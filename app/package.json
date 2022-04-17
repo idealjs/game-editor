@@ -13,7 +13,6 @@
     "@types/node": "^17.0.23",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "electron": "^18.0.4",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -24,13 +23,15 @@
   },
   "devDependencies": {
     "concurrently": "^7.1.0",
+    "electron": "18.0.4",
+    "electron-builder": "^23.0.3",
     "electronmon": "^2.0.2",
     "wait-on": "^6.0.1"
   },
   "scripts": {
-    "start": "concurrently \"yarn react:serve\" \"yarn electron:watch\" \"yarn electron:wait\"",
+    "start": "ELECTRON_START_URL=http://localhost:3000 concurrently \"yarn react:serve\" \"yarn electron:watch\" \"yarn electron:wait\"",
     "build:win": "electron-builder --win --x64",
-    "electron:build": "tsc  -p src-electron/tsconfig.json",
+    "electron:build": "tsc -p src-electron/tsconfig.json",
     "electron:watch": "yarn electron:build -w",
     "electron:start": "electronmon .",
     "electron:wait": "wait-on http://localhost:3000 && yarn electron:start",
@@ -48,6 +49,7 @@
       "node_modules/**/*"
     ],
     "win": {
+      "extends": null,
       "target": [
         "nsis",
         "zip"
