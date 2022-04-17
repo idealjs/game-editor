@@ -8,6 +8,8 @@ RUN yarn
 
 COPY . .
 
+RUN yarn electron:build
+
 RUN yarn build
 
 CMD ["yarn", "build:win"]
