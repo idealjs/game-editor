@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "ELECTRON_START_URL=http://localhost:3000 concurrently \"yarn react:serve\" \"yarn electron:watch\" \"yarn electron:wait\"",
-    "build:win": "electron-builder --win --x64",
+    "build:win": "DEBUG=electron-builder electron-builder --win --x64",
     "electron:build": "tsc -p src-electron/tsconfig.json",
     "electron:watch": "yarn electron:build -w",
     "electron:start": "electronmon .",
@@ -47,6 +47,7 @@
     "extends": null,
     "files": [
       "build/**/*",
+      "src-electron/dist/**/*",
       "node_modules/**/*"
     ],
     "win": {
