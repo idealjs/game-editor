@@ -18,6 +18,10 @@ module.exports = {
         },
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
   resolve: {
@@ -32,16 +36,11 @@ module.exports = {
     filename: "index.js",
   },
   externals: [
-    "@idealjs/app-menu",
-    "@idealjs/grape-layout",
     "effector",
     "effector-react",
-    "effector-react/scope",
-    "html2canvas",
-    "immer",
     "react",
     "react/jsx-runtime",
-    "reselect",
   ],
+
   plugins: [new BundleAnalyzerPlugin({ analyzerMode: "static" })],
 };

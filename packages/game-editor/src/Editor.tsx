@@ -31,6 +31,8 @@ const Editor = (props: IProps) => {
               label: "File",
               menus: [
                 { label: "New File" },
+                { label: "Open File" },
+                { label: "Open Folder", onClick: () => {} },
                 { label: "Open Recent", menus: [{ label: "abc" }] },
               ],
             },
