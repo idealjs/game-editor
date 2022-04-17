@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@idealjs/app-menu": "^1.0.0",
-    "@idealjs/grape-layout": "^1.8.1",
+    "@idealjs/grape-layout": "^1.9.0",
     "effector": "^22.2.0",
     "effector-react": "^22.0.6",
     "html2canvas": "^1.4.1",
