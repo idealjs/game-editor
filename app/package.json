@@ -44,12 +44,12 @@
   "build": {
     "appId": "com.idealjs.game-editor",
     "productName": "game editor",
+    "extends": null,
     "files": [
       "build/**/*",
       "node_modules/**/*"
     ],
     "win": {
-      "extends": null,
       "target": [
         "nsis",
         "zip"
