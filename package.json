@@ -3,6 +3,7 @@
   "private": true,
   "workspaces": [
     "packages/*",
+    "app",
     "example"
   ],
   "repository": "git@github.com:idealjs/mono-template.git",
