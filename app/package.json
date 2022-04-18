@@ -47,7 +47,7 @@
     "extends": null,
     "files": [
       "build/**/*",
-      "src-electron/dist/**/*",
+      "src-electron/**/*.js",
       "node_modules/**/*"
     ],
     "win": {

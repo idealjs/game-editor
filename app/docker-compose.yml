@@ -12,7 +12,6 @@ services:
       HTTP_PROXY: $${http_proxy}
       HTTPS_PROXY: $${https_proxy}
     volumes:
-      - ./:/project
       - ./dist:/dist
       - ~/.cache/electron:/root/.cache/electron
       - ~/.cache/electron-builder:/root/.cache/electron-builder
