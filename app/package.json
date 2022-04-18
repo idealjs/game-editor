@@ -2,7 +2,7 @@
   "name": "@idealjs/game-editor-app",
   "version": "1.0.2",
   "private": true,
-  "main": "src-electron/dist/index.js",
+  "main": "src-electron/index.js",
   "dependencies": {
     "@craco/craco": "^6.4.3",
     "@idealjs/game-editor": "^1.0.2",
