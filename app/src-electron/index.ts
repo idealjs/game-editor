@@ -16,7 +16,7 @@ const createWindow = () => {
   const startUrl =
     process.env.ELECTRON_START_URL ||
     new URL(
-      `file://${path.resolve(__dirname, "../src/build/index.html")}`
+      `file://${path.resolve(__dirname, "../build/index.html")}`
     ).toString();
 
   mainWindow.loadURL(startUrl);
