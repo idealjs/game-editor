@@ -1,5 +1,5 @@
 import { useStore } from "effector-react";
-import { CSSProperties, useState } from "react";
+import { CSSProperties, useEffect, useState } from "react";
 
 import $open from "../store/open";
 import styles from "./index.module.css";
@@ -14,17 +14,24 @@ interface IProps {
   style?: CSSProperties;
   menu: IMenu;
   onClick?: () => void;
+  hover?: boolean;
+  setHover?: (label: string) => void;
 }
 
 const Menu = (props: IProps) => {
-  const { style, menu, onClick } = props;
+  const { style, menu, onClick, hover, setHover } = props;
+  const [subMenuHover, setSubMenuHover] = useState<string | null>(null);
   const open = useStore($open);
-  const [hover, setHover] = useState(false);
+
+  useEffect(() => {
+    return () => {
+      setSubMenuHover(null);
+    };
+  }, []);
 
   return (
     <div
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
+      onMouseEnter={() => setHover && setHover(menu.label)}
       onClick={() => onClick && onClick()}
       style={{
         position: "relative",
@@ -54,7 +61,13 @@ const Menu = (props: IProps) => {
           hover &&
           menu.menus?.map((menu) => {
             return (
-              <Menu key={menu.label} menu={menu} style={{ width: "300px" }} />
+              <Menu
+                key={menu.label}
+                menu={menu}
+                style={{ width: "300px" }}
+                setHover={setSubMenuHover}
+                hover={subMenuHover === menu.label}
+              />
             );
           })}
       </div>
