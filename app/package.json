@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "private": true,
   "main": "src-electron/index.js",
+  "homepage": "./",
   "dependencies": {
     "@craco/craco": "^6.4.3",
     "@idealjs/game-editor": "^1.0.3",
@@ -43,7 +44,7 @@
   },
   "build": {
     "appId": "com.idealjs.game-editor",
-    "productName": "game editor",
+    "productName": "Game Editor",
     "extends": null,
     "files": [
       "build/**/*",
