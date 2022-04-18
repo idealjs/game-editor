@@ -10,10 +10,8 @@ COPY src-electron/ ./src-electron/
 
 RUN yarn electron:build
 
-COPY src tsconfig.json .
+COPY . .
 
 RUN yarn react:build
-
-COPY . .
 
 CMD ["yarn", "build:win"]
