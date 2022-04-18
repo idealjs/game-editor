@@ -30,14 +30,14 @@
     "wait-on": "^6.0.1"
   },
   "scripts": {
-    "start": "ELECTRON_START_URL=http://localhost:3000 concurrently \"yarn react:serve\" \"yarn electron:watch\" \"yarn electron:wait\"",
+    "start:app": "ELECTRON_START_URL=http://localhost:3000 concurrently \"yarn react:serve\" \"yarn electron:watch\" \"yarn electron:wait\"",
+    "start": "craco start",
     "build:win": "DEBUG=electron-builder electron-builder --win --x64",
     "electron:build": "tsc -p src-electron/tsconfig.json",
     "electron:watch": "yarn electron:build -w",
     "electron:start": "electronmon .",
     "electron:wait": "wait-on http://localhost:3000 && yarn electron:start",
-    "react:start": "craco start",
-    "react:serve": "BROWSER=none yarn react:start",
+    "react:serve": "BROWSER=none yarn start",
     "react:build": "craco build",
     "react:test": "craco test",
     "react:eject": "craco eject"
