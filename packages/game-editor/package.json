@@ -1,6 +1,6 @@
 {
   "name": "@idealjs/game-editor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "prepublishOnly": "rm -rf dist&yarn build:webpack"
   },
   "dependencies": {
-    "@idealjs/app-menu": "^1.0.2",
+    "@idealjs/app-menu": "^1.0.3",
     "@idealjs/grape-layout": "^1.9.0",
     "effector": "^22.2.0",
     "effector-react": "^22.0.6",
