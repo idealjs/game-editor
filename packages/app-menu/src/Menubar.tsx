@@ -15,7 +15,11 @@ const Menubar = (props: IProps) => {
   const toggleMenu = useEvent($toggleMenu);
 
   return (
-    <div style={{ display: "flex", position: "relative" }}>
+    <div
+      tabIndex={0}
+      style={{ display: "flex", position: "relative" }}
+      onBlur={toggleMenu}
+    >
       {menus?.map((menu) => {
         return (
           <Menu

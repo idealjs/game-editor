@@ -24,10 +24,10 @@ const Menu = (props: IProps) => {
   const open = useStore($open);
 
   useEffect(() => {
-    return () => {
+    if (!open || !hover) {
       setSubMenuHover(null);
-    };
-  }, []);
+    }
+  }, [hover, open]);
 
   return (
     <div
