@@ -42,6 +42,7 @@ module.exports = {
     "react",
     "react/jsx-runtime",
     "reselect",
+    "pixi.js",
   ],
   plugins: [new BundleAnalyzerPlugin({ analyzerMode: "static" })],
 };

@@ -17,6 +17,7 @@
     "effector-react": "^22.0.6",
     "html2canvas": "^1.4.1",
     "immer": "^9.0.12",
+    "pixi.js": "^6.3.0",
     "reselect": "^4.1.5"
   }
 }
