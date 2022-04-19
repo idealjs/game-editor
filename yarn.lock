@@ -1248,44 +1248,44 @@
   resolved "https://registry.npmmirror.com/@hutson/parse-repository-url/-/parse-repository-url-3.0.2.tgz#98c23c950a3d9b6c8f0daed06da6c3af06981340"
   integrity sha512-H9XAx3hc0BQHY6l+IFSWHDySypcXsvsuLhgYLUGywmJ5pswRVQJUHpOsobnLYp2ZUaUlKiKDrgWWhosOwAEM8Q==
 
-"@idealjs/drag-drop@^1.10.0":
-  version "1.10.0"
-  resolved "https://registry.npmmirror.com/@idealjs/drag-drop/-/drag-drop-1.10.0.tgz#4b5a29427f895d24cdc3591d37fcbe73658e6228"
-  integrity sha512-0CVaSKC48LfYwg+Myhm4mlvKZ9lb6cVJdYXbuabNL8Adgmlekxqe4VqnF+3WNJ1MS6h/C+dlNrB9ljBiqHkaKQ==
+"@idealjs/drag-drop@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.npmmirror.com/@idealjs/drag-drop/-/drag-drop-1.11.0.tgz#ceaa5c27888627dcc2283a907ab22386e422cf6d"
+  integrity sha512-idDLj3ED+TN4E97PdqUpMgV5EZ1TyLATCKvq00G484pJG6jdLTgxhgQ63LODCbEJPa8b4rO5pSkAW0/cXxTjDA==
 
-"@idealjs/entity@^1.10.0":
-  version "1.10.0"
-  resolved "https://registry.npmmirror.com/@idealjs/entity/-/entity-1.10.0.tgz#56edfe0804f0172dc276d7cb5506f1dda1b6a7f7"
-  integrity sha512-z4ul+XjSN6PPfi4E06Lyco3zEM2d+U2ViKNhM11/EEYZ9m7wFSuEtHsExWT76fF+RmMYNhPfkvBvPXGt6nf9bA==
+"@idealjs/entity@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.npmmirror.com/@idealjs/entity/-/entity-1.11.0.tgz#e56983cba7a78d8c87b85cdfc1dfaa8ce318195d"
+  integrity sha512-aLS8Xc6lm55NGvMa0EsKRtZhwSj4r98nj3AMvxsVzYrt5IYlYrnzhfli67AgiRtZpSin7SLEqmG3azcexY3K2Q==
 
-"@idealjs/grape-layout@^1.10.0":
-  version "1.10.0"
-  resolved "https://registry.npmmirror.com/@idealjs/grape-layout/-/grape-layout-1.10.0.tgz#b281aad94a9a0c86e674712157f982267bced355"
-  integrity sha512-fEAo+2Gt89IbbT7UC5emW2EgZjPJKQOTJmQwWEi/IelKn0sOK+BrzFhnEQzQLkZGDGQ40lPU2VMG/x49SW0f+Q==
+"@idealjs/grape-layout@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.npmmirror.com/@idealjs/grape-layout/-/grape-layout-1.11.0.tgz#eff642b946c875ff70e3eb8d60f377197f0248ac"
+  integrity sha512-20ir5MP3XHNI34X0zPoWJMk6ecx9doT+C+rVc/o7BpC5PIazqP8u+rEFREjwLsTFyIeNqF6QtS5K36YjFw1/dw==
   dependencies:
-    "@idealjs/layout-manager" "^1.10.0"
-    "@idealjs/portal-window" "^1.10.0"
-    "@idealjs/sns" "^1.10.0"
+    "@idealjs/layout-manager" "^1.11.0"
+    "@idealjs/portal-window" "^1.11.0"
+    "@idealjs/sns" "^1.11.0"
     clsx "^1.1.1"
 
-"@idealjs/layout-manager@^1.10.0":
-  version "1.10.0"
-  resolved "https://registry.npmmirror.com/@idealjs/layout-manager/-/layout-manager-1.10.0.tgz#33de11bdf8f00f57bb2e22255596e3590e17a609"
-  integrity sha512-yVQ8k1YTODMcmB8iKcq9eT+8y4vaFeuNpFO16HF1MV/U/ucSsRxoSSz/o3meSUhlxZpXMWSZGuYlpRRHksk+CQ==
+"@idealjs/layout-manager@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.npmmirror.com/@idealjs/layout-manager/-/layout-manager-1.11.0.tgz#2fe4ddb8689b37fdee96202e6a24a83f4a9fe7cf"
+  integrity sha512-foHJvdkJOQI71frqhkb1Spy3H9ByrlwKAkKsMW9oeRHMWYXO/XTXv72cqJNe6OODwQ9kv/YjXBeiMtZW0bwmHA==
   dependencies:
-    "@idealjs/drag-drop" "^1.10.0"
-    "@idealjs/entity" "^1.10.0"
-    "@idealjs/sns" "^1.10.0"
+    "@idealjs/drag-drop" "^1.11.0"
+    "@idealjs/entity" "^1.11.0"
+    "@idealjs/sns" "^1.11.0"
 
-"@idealjs/portal-window@^1.10.0":
-  version "1.10.0"
-  resolved "https://registry.npmmirror.com/@idealjs/portal-window/-/portal-window-1.10.0.tgz#230c2a0ff2476c9be3a1bd10c582abbdd6de6951"
-  integrity sha512-zcfRItgvjXvqJSLeciwviCVcBwUqM7ZBe1m2n46uLoygP8g+FhZ93iRR0S00YZlStdoABeq73OtApTC/t3QIqQ==
+"@idealjs/portal-window@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.npmmirror.com/@idealjs/portal-window/-/portal-window-1.11.0.tgz#c4898befae48a8fe378fb2ffca1a249289db9581"
+  integrity sha512-6YI+IQJBlR2086m1YPY1XVVC+Qxb/to4mTme+HXx45qRQaeVI8Ve5ZzSxN/zUB97eWWWDswyoruhd5+CQfrKLA==
 
-"@idealjs/sns@^1.10.0":
-  version "1.10.0"
-  resolved "https://registry.npmmirror.com/@idealjs/sns/-/sns-1.10.0.tgz#1e4552ad89c3993ebce02a6dabc5e83d5157beff"
-  integrity sha512-7c+afuXbLVi+fR1EOsXDSsupcNSupRZXn+dt3mWmylR5suRAHEF59gFS2qhLs4pn9FNc2CXfZMGLhqCZZ7Knmg==
+"@idealjs/sns@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.npmmirror.com/@idealjs/sns/-/sns-1.11.0.tgz#a5d49c704a25261699848a4b166dd1adab09b0b5"
+  integrity sha512-5+bTyB7Iz0yAesG5gfirbGtcBeCFCxa55VRJVBDaGKD4M8V+mEPu1cCoPsSzHV8e4KGPoDmttLJtF3H0y9H1Gw==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -9195,6 +9195,11 @@ nanoid@^3.3.1:
   version "3.3.2"
   resolved "https://registry.npmmirror.com/nanoid/-/nanoid-3.3.2.tgz#c89622fafb4381cd221421c69ec58547a1eec557"
   integrity sha512-CuHBogktKwpm5g2sRgv83jEy2ijFzBwMoYA60orPDR7ynsLijJDqgsi4RDGj3OJpy3Ieb+LYwiRmIOGyytgITA==
+
+nanoid@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.npmmirror.com/nanoid/-/nanoid-3.3.3.tgz#fd8e8b7aa761fe807dba2d1b98fb7241bb724a25"
+  integrity sha512-p1sjXuopFs0xg+fPASzQ28agW1oHD7xDsd9Xkf3T15H3c/cifrFHVwrh74PdoklAPi+i7MdRsE47vm2r6JoB+w==
 
 natural-compare@^1.4.0:
   version "1.4.0"

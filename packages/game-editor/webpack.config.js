@@ -41,8 +41,9 @@ module.exports = {
     "immer",
     "react",
     "react/jsx-runtime",
-    "reselect",
+    "nanoid",
     "pixi.js",
+    "reselect",
   ],
   plugins: [new BundleAnalyzerPlugin({ analyzerMode: "static" })],
 };

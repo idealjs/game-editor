@@ -5,7 +5,7 @@ import {
   PanelNode,
   ROOTID,
   useLayoutNode,
-} from "@idealjs/layout-manager";
+} from "@idealjs/grape-layout";
 import { nanoid } from "nanoid";
 
 const rules = [

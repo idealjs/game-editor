@@ -1,5 +1,4 @@
-import GrapeLayout from "@idealjs/grape-layout";
-import { Layout, LayoutNode } from "@idealjs/layout-manager";
+import GrapeLayout, { Layout, LayoutNode } from "@idealjs/grape-layout";
 import { fork } from "effector";
 import { Provider } from "effector-react/scope";
 
