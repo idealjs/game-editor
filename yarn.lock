@@ -1248,44 +1248,44 @@
   resolved "https://registry.npmmirror.com/@hutson/parse-repository-url/-/parse-repository-url-3.0.2.tgz#98c23c950a3d9b6c8f0daed06da6c3af06981340"
   integrity sha512-H9XAx3hc0BQHY6l+IFSWHDySypcXsvsuLhgYLUGywmJ5pswRVQJUHpOsobnLYp2ZUaUlKiKDrgWWhosOwAEM8Q==
 
-"@idealjs/drag-drop@^1.9.0":
-  version "1.9.0"
-  resolved "https://registry.npmmirror.com/@idealjs/drag-drop/-/drag-drop-1.9.0.tgz#8b3c3b6d911564dad3d092c4576e803ba296c5a4"
-  integrity sha512-F3i2T56zKQnSz4+ANv8k9EP7HOyQyPoHfsNT8QbR9ABK3WL9JYMbDyp7YaV8UpLmHak9r7/eBbjQeLBp5+BpdA==
+"@idealjs/drag-drop@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.npmmirror.com/@idealjs/drag-drop/-/drag-drop-1.10.0.tgz#4b5a29427f895d24cdc3591d37fcbe73658e6228"
+  integrity sha512-0CVaSKC48LfYwg+Myhm4mlvKZ9lb6cVJdYXbuabNL8Adgmlekxqe4VqnF+3WNJ1MS6h/C+dlNrB9ljBiqHkaKQ==
 
-"@idealjs/entity@^1.9.0":
-  version "1.9.0"
-  resolved "https://registry.npmmirror.com/@idealjs/entity/-/entity-1.9.0.tgz#62be2e3530315f77ea3f0823c7f084d0b289eff6"
-  integrity sha512-7z43vzvl7Qv4LrPl28jsnHKFAGNBJoc/xsxXizfyKkYJ8QvnF5szhpYoB/CkHaD5YQ3EX4mnbxpk69PgxWoK+g==
+"@idealjs/entity@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.npmmirror.com/@idealjs/entity/-/entity-1.10.0.tgz#56edfe0804f0172dc276d7cb5506f1dda1b6a7f7"
+  integrity sha512-z4ul+XjSN6PPfi4E06Lyco3zEM2d+U2ViKNhM11/EEYZ9m7wFSuEtHsExWT76fF+RmMYNhPfkvBvPXGt6nf9bA==
 
-"@idealjs/grape-layout@^1.9.0":
-  version "1.9.0"
-  resolved "https://registry.npmmirror.com/@idealjs/grape-layout/-/grape-layout-1.9.0.tgz#8c6e3bf2eab517dfbe134f7af3303820e60a1a9e"
-  integrity sha512-+0l4Yy0s4BH8/Li16DaLcms0bmonMaJzxzExBlJ4yQRIHcVLhH8G7UMnlNj9q6Vg41DuzhIiCEH7GoiQ1xgAbQ==
+"@idealjs/grape-layout@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.npmmirror.com/@idealjs/grape-layout/-/grape-layout-1.10.0.tgz#b281aad94a9a0c86e674712157f982267bced355"
+  integrity sha512-fEAo+2Gt89IbbT7UC5emW2EgZjPJKQOTJmQwWEi/IelKn0sOK+BrzFhnEQzQLkZGDGQ40lPU2VMG/x49SW0f+Q==
   dependencies:
-    "@idealjs/layout-manager" "^1.9.0"
-    "@idealjs/portal-window" "^1.9.0"
-    "@idealjs/sns" "^1.9.0"
+    "@idealjs/layout-manager" "^1.10.0"
+    "@idealjs/portal-window" "^1.10.0"
+    "@idealjs/sns" "^1.10.0"
     clsx "^1.1.1"
 
-"@idealjs/layout-manager@^1.9.0":
-  version "1.9.0"
-  resolved "https://registry.npmmirror.com/@idealjs/layout-manager/-/layout-manager-1.9.0.tgz#be8653615c411d964c332a7cf79196795de5f46b"
-  integrity sha512-LHGl+7hMLTbNSjzGn5e6jdZ4dwxE0wkCTeb4dQxKl+IF8fkT4qZI46dRFjroTM1rdpeeUmTtA7crRwIjPWhDYw==
+"@idealjs/layout-manager@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.npmmirror.com/@idealjs/layout-manager/-/layout-manager-1.10.0.tgz#33de11bdf8f00f57bb2e22255596e3590e17a609"
+  integrity sha512-yVQ8k1YTODMcmB8iKcq9eT+8y4vaFeuNpFO16HF1MV/U/ucSsRxoSSz/o3meSUhlxZpXMWSZGuYlpRRHksk+CQ==
   dependencies:
-    "@idealjs/drag-drop" "^1.9.0"
-    "@idealjs/entity" "^1.9.0"
-    "@idealjs/sns" "^1.9.0"
+    "@idealjs/drag-drop" "^1.10.0"
+    "@idealjs/entity" "^1.10.0"
+    "@idealjs/sns" "^1.10.0"
 
-"@idealjs/portal-window@^1.9.0":
-  version "1.9.0"
-  resolved "https://registry.npmmirror.com/@idealjs/portal-window/-/portal-window-1.9.0.tgz#4ddd740f8d7134e7c783a991b8ec387b206313a4"
-  integrity sha512-mR3rLk5GgAw8j48tHML54AXoSgizLAwvuVovm5oEB2+SLpIxN2DuiRopyadmn4GkM5lP8yIMta/zcTds/CzUWg==
+"@idealjs/portal-window@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.npmmirror.com/@idealjs/portal-window/-/portal-window-1.10.0.tgz#230c2a0ff2476c9be3a1bd10c582abbdd6de6951"
+  integrity sha512-zcfRItgvjXvqJSLeciwviCVcBwUqM7ZBe1m2n46uLoygP8g+FhZ93iRR0S00YZlStdoABeq73OtApTC/t3QIqQ==
 
-"@idealjs/sns@^1.9.0":
-  version "1.9.0"
-  resolved "https://registry.npmmirror.com/@idealjs/sns/-/sns-1.9.0.tgz#31a69c67f104047ba979754437bd2e938515b4d4"
-  integrity sha512-YOOHoUMPOVeoAsn9OGW1KIHfk4z4TM6PesPaBACtS3+gujgK/V5tgmZBrbg3vXDYVTCeynzG6J3sRk9OkWJvtg==
+"@idealjs/sns@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.npmmirror.com/@idealjs/sns/-/sns-1.10.0.tgz#1e4552ad89c3993ebce02a6dabc5e83d5157beff"
+  integrity sha512-7c+afuXbLVi+fR1EOsXDSsupcNSupRZXn+dt3mWmylR5suRAHEF59gFS2qhLs4pn9FNc2CXfZMGLhqCZZ7Knmg==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
