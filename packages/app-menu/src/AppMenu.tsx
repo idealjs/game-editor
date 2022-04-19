@@ -2,23 +2,24 @@ import { useEvent } from "effector-react";
 import { useState } from "react";
 
 import Menu, { IMenu } from "./Menu";
-import { $toggleMenu } from "./store/open";
+import { $closeMenu, $toggleMenu } from "./store/open";
 
 interface IProps {
   menus?: IMenu[];
 }
 
-const Menubar = (props: IProps) => {
+const AppMenu = (props: IProps) => {
   const { menus } = props;
   const [subMenuHover, setSubMenuHover] = useState<string | null>(null);
 
   const toggleMenu = useEvent($toggleMenu);
+  const closeMenu = useEvent($closeMenu);
 
   return (
     <div
       tabIndex={0}
       style={{ display: "flex", position: "relative" }}
-      onBlur={toggleMenu}
+      onBlur={closeMenu}
     >
       {menus?.map((menu) => {
         return (
@@ -35,4 +36,4 @@ const Menubar = (props: IProps) => {
   );
 };
 
-export default Menubar;
+export default AppMenu;

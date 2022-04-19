@@ -32,7 +32,9 @@ const Menu = (props: IProps) => {
   return (
     <div
       onMouseEnter={() => setHover && setHover(menu.label)}
-      onClick={() => onClick && onClick()}
+      onClick={() => {
+        onClick ? onClick() : menu.onClick && menu.onClick();
+      }}
       style={{
         position: "relative",
         backgroundColor: "#404040",
