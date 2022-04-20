@@ -5,11 +5,12 @@ import Menu, { IMenu } from "./Menu";
 import { $closeMenu, $toggleMenu } from "./store/open";
 
 interface IProps {
+  id: string;
   menus?: IMenu[];
 }
 
 const AppMenu = (props: IProps) => {
-  const { menus } = props;
+  const { id, menus } = props;
   const [subMenuHover, setSubMenuHover] = useState<string | null>(null);
 
   const toggleMenu = useEvent($toggleMenu);
@@ -19,14 +20,15 @@ const AppMenu = (props: IProps) => {
     <div
       tabIndex={0}
       style={{ display: "flex", position: "relative" }}
-      onBlur={closeMenu}
+      onBlur={() => closeMenu(id)}
     >
       {menus?.map((menu) => {
         return (
           <Menu
+            AppMenuId={id}
             key={menu.label}
             menu={menu}
-            onClick={toggleMenu}
+            onClick={() => toggleMenu(id)}
             setHover={setSubMenuHover}
             hover={subMenuHover === menu.label}
           />

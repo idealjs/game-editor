@@ -20,6 +20,7 @@ const Menubar = () => {
 
   return (
     <AppMenu
+      id={nanoid()}
       menus={[
         {
           label: "File",

@@ -36,8 +36,7 @@ module.exports = {
     filename: "index.js",
   },
   externals: [
-    "effector",
-    "effector-react",
+    "@idealjs/entity",
     "react",
     "react/jsx-runtime",
   ],

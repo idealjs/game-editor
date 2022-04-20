@@ -1,4 +1,4 @@
-import { useStore } from "effector-react";
+import { useStoreMap } from "effector-react";
 import { CSSProperties, useEffect, useState } from "react";
 
 import $open from "../store/open";
@@ -11,6 +11,7 @@ export interface IMenu {
 }
 
 interface IProps {
+  AppMenuId: string;
   style?: CSSProperties;
   menu: IMenu;
   onClick?: () => void;
@@ -19,10 +20,10 @@ interface IProps {
 }
 
 const Menu = (props: IProps) => {
-  const { style, menu, onClick, hover, setHover } = props;
+  const { AppMenuId, style, menu, onClick, hover, setHover } = props;
   const [subMenuHover, setSubMenuHover] = useState<string | null>(null);
-  const open = useStore($open);
-
+  const open = useStoreMap($open, (state) => state[AppMenuId]);
+  
   useEffect(() => {
     if (!open || !hover) {
       setSubMenuHover(null);
@@ -64,6 +65,7 @@ const Menu = (props: IProps) => {
           menu.menus?.map((menu) => {
             return (
               <Menu
+                AppMenuId={AppMenuId}
                 key={menu.label}
                 menu={menu}
                 style={{ width: "300px" }}

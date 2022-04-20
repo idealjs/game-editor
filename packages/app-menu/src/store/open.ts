@@ -1,14 +1,27 @@
 import { createEvent, createStore } from "effector";
 
-export const $openMenu = createEvent();
+export const $openMenu = createEvent<string>();
 
-export const $closeMenu = createEvent();
+export const $closeMenu = createEvent<string>();
 
-export const $toggleMenu = createEvent();
+export const $toggleMenu = createEvent<string>();
 
-const $open = createStore<boolean>(false)
-  .on($openMenu, () => true)
-  .on($closeMenu, () => false)
-  .on($toggleMenu, (o) => !o);
+interface IOpenState {
+  [key: string]: boolean;
+}
+
+const $open = createStore<IOpenState>({})
+  .on($openMenu, (state, key) => ({
+    ...state,
+    [key]: true,
+  }))
+  .on($closeMenu, (state, key) => ({
+    ...state,
+    [key]: false,
+  }))
+  .on($toggleMenu, (state, key) => ({
+    ...state,
+    [key]: !state[key],
+  }));
 
 export default $open;
