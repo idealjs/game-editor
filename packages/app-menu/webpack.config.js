@@ -35,11 +35,7 @@ module.exports = {
     libraryTarget: "umd",
     filename: "index.js",
   },
-  externals: [
-    "@idealjs/entity",
-    "react",
-    "react/jsx-runtime",
-  ],
+  externals: ["valtio", "react", "react/jsx-runtime"],
 
   plugins: [new BundleAnalyzerPlugin({ analyzerMode: "static" })],
 };
