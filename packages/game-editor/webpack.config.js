@@ -34,16 +34,10 @@ module.exports = {
   externals: [
     "@idealjs/app-menu",
     "@idealjs/grape-layout",
-    "effector",
-    "effector-react",
-    "effector-react/scope",
-    "html2canvas",
-    "immer",
     "react",
     "react/jsx-runtime",
     "nanoid",
     "pixi.js",
-    "reselect",
   ],
   plugins: [new BundleAnalyzerPlugin({ analyzerMode: "static" })],
 };

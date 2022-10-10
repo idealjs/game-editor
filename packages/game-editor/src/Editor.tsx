@@ -1,6 +1,4 @@
 import GrapeLayout, { Layout, LayoutNode } from "@idealjs/grape-layout";
-import { fork } from "effector";
-import { Provider } from "effector-react/scope";
 
 import Menubar from "./components/Menubar";
 
@@ -12,27 +10,23 @@ interface IProps {
   layout: LayoutNode;
 }
 
-const scope = fork();
-
 const Editor = (props: IProps) => {
   const { layout } = props;
 
   return (
-    <Provider value={scope}>
-      <GrapeLayout factory={factory} layout={layout}>
-        <div
-          style={{
-            height: "100%",
-            width: "100%",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <Menubar />
-          <Layout />
-        </div>
-      </GrapeLayout>
-    </Provider>
+    <GrapeLayout factory={factory} layout={layout}>
+      <div
+        style={{
+          height: "100%",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <Menubar />
+        <Layout />
+      </div>
+    </GrapeLayout>
   );
 };
 
