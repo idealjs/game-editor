@@ -4,6 +4,7 @@
   "workspaces": [
     "packages/*",
     "app",
+    "app-file",
     "example"
   ],
   "repository": "git@github.com:idealjs/mono-template.git",
