@@ -1,96 +1,25 @@
-import "./App.css";
+import clsx from "clsx";
 
-import Editor from "@idealjs/game-editor";
-import { ILayoutJSON, LayoutNode } from "@idealjs/layout-manager";
+import { appStyle } from "./App.css";
+import { lightTheme } from "./components/styles";
+import Layout from "./features/Layout";
+import Menubar from "./features/Menubar";
 
-const layout = new LayoutNode({
-  layoutJSON: {
-    id: "layout-manager-root",
-    direction: "ROOT",
-    primaryOffset: 0,
-    secondaryOffset: 0,
-    layouts: [
-      {
-        id: "mainN",
-        direction: "COL",
-        primaryOffset: 0,
-        secondaryOffset: 0,
-        layouts: [
-          {
-            id: "N_A",
-            direction: "TAB",
-            primaryOffset: 0,
-            secondaryOffset: 0,
-            layouts: [],
-            panels: [
-              {
-                id: "P_A_A",
-                page: "test2",
-              },
-              {
-                id: "P_A_B",
-                page: "test",
-              },
-            ],
-          },
-          {
-            id: "N_B",
-            direction: "ROW",
-            primaryOffset: 0,
-            secondaryOffset: 0,
-            layouts: [
-              {
-                id: "N_B_A",
-                direction: "TAB",
-                primaryOffset: 0,
-                secondaryOffset: 0,
-                layouts: [],
-                panels: [
-                  {
-                    id: "P_B_A_A",
-                    page: "test",
-                  },
-                  {
-                    id: "P_B_A_B",
-                    page: "test",
-                    data: "abc",
-                  },
-                ],
-              },
-              {
-                id: "N_B_B",
-                direction: "TAB",
-                primaryOffset: 0,
-                secondaryOffset: 0,
-                layouts: [],
-                panels: [
-                  {
-                    id: "P_B_B_A",
-                    page: "test",
-                  },
-                  {
-                    id: "P_B_B_B",
-                    page: "test",
-                  },
-                ],
-              },
-            ],
-            panels: [],
-          },
-        ],
-        panels: [],
-      },
-    ],
-    panels: [],
-  } as ILayoutJSON,
-});
-
-function App() {
+const App = () => {
   return (
-    <div className="App" style={{ height: "100vh", width: "100vw" }}>
-      <Editor layout={layout} />
+    <div
+      style={{
+        height: "100vh",
+        width: "100vw",
+        display: "flex",
+        flexDirection: "column",
+      }}
+      className={clsx(appStyle, lightTheme)}
+    >
+      <Menubar />
+      <Layout />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,9 @@
+{
+  "extends": "../.eslintrc",
+  "plugins": ["@idealjs/reactive"],
+
+  "rules": {
+    "@idealjs/reactive/no-nested-derive-call": "error",
+    "@idealjs/reactive/no-state-created-in-derive": "error"
+  }
+}
