@@ -1,12 +1,12 @@
-import clsx from "clsx";
-
 import {
   card,
   cardShadow,
+  hoverReaction,
   popover,
   popoverContent,
-  popoverHover,
-} from "../../components/styles";
+} from "@idealjs/camphora-styled";
+import clsx from "clsx";
+
 import { closeMenu } from "../store";
 import { menuCard, menuItem, menuItemLabel, subMenus } from "./style.css";
 
@@ -32,7 +32,7 @@ const MenuItem = (props: IProps) => {
       : undefined;
 
   return (
-    <div className={clsx(menuItem, popover, popoverHover)}>
+    <div className={clsx(menuItem, popover, hoverReaction)}>
       <div className={menuItemLabel} onClick={_onClick}>
         {item.label}
       </div>

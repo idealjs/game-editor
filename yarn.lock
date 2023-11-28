@@ -833,12 +833,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@idealjs/eslint-plugin-reactive@npm:^0.1.8":
-  version: 0.1.8
-  resolution: "@idealjs/eslint-plugin-reactive@npm:0.1.8"
+"@idealjs/camphora-styled@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "@idealjs/camphora-styled@npm:0.0.4"
+  checksum: f2bbd358e52d7f6f359e4326397f2427b13fdbb9e7166b2deafe1b15e7a49a99541803794ca57ed8f872ce8dbad96a456dc293dcfe766f8cddd9b0769b6eb387
+  languageName: node
+  linkType: hard
+
+"@idealjs/eslint-plugin-reactive@npm:^0.1.13":
+  version: 0.1.13
+  resolution: "@idealjs/eslint-plugin-reactive@npm:0.1.13"
   peerDependencies:
     eslint: "*"
-  checksum: 5099d91af79bd2f58b4ee3f890cd14c72f1d42183e99d4f78e4684619c2837bf4f8cc21278f5d2fc96cdd8c60691f4e6daf52982da6467d468243c3f6187d521
+  checksum: 36bd6602a956b239a8e49e99e02886a328260e315431fda7be07ecaaa29b7c679b222b5d64bfda1e3eb81f88fbf4ac59ca605d9efe2778b14bbbec72072f9372
   languageName: node
   linkType: hard
 
@@ -851,12 +858,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@idealjs/reactive@npm:^0.1.8":
-  version: 0.1.8
-  resolution: "@idealjs/reactive@npm:0.1.8"
+"@idealjs/reactive@npm:^0.1.13":
+  version: 0.1.13
+  resolution: "@idealjs/reactive@npm:0.1.13"
   dependencies:
     csstype: "npm:^3.1.2"
-  checksum: 082f22035dfec008d7c06ec3fe59c4925dc28879e307291100df4a91c7e837ca8d4286120e33447294e3e2131b5643928ee8705bef83b34a8b5ec17b5f5aa686
+  checksum: 3e0b2d25c4f7f970ba9a058b8747e0b37361f18fcb57ab19ffc9fa1873683d0ba7d7768dc25c1515f86706177bd6a445ad08f4ffec2da67a698bdfd8931cda3b
   languageName: node
   linkType: hard
 
@@ -2054,9 +2061,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:app"
   dependencies:
-    "@idealjs/eslint-plugin-reactive": "npm:^0.1.8"
+    "@idealjs/camphora-styled": "npm:^0.0.4"
+    "@idealjs/eslint-plugin-reactive": "npm:^0.1.13"
     "@idealjs/layout-manager": "npm:^3.0.0"
-    "@idealjs/reactive": "npm:^0.1.8"
+    "@idealjs/reactive": "npm:^0.1.13"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/css-utils": "npm:^0.1.3"
     "@vanilla-extract/vite-plugin": "npm:^3.9.1"

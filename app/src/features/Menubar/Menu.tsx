@@ -1,14 +1,14 @@
-import { createState } from "@idealjs/reactive";
-import clsx from "clsx";
-
 import {
   card,
   cardShadow,
+  focusReaction,
   popover,
   popoverBottom,
   popoverContent,
-  popoverFocus,
-} from "../../components/styles";
+} from "@idealjs/camphora-styled";
+import { createState } from "@idealjs/reactive";
+import clsx from "clsx";
+
 import { showMenu } from "../store";
 import MenuItem, { IMenuItem } from "./MenuItem";
 import { menu, menuCard, menuLabel } from "./style.css";
@@ -25,7 +25,7 @@ const Menu = (props: IProps) => {
     <div
       ref={ref}
       tabIndex={0}
-      className={() => clsx(menu, popover, popoverFocus)}
+      className={() => clsx(menu, popover, focusReaction)}
       onBlur={() => {
         showMenu.val = null;
       }}

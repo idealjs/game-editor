@@ -1,7 +1,6 @@
+import { vars } from "@idealjs/camphora-styled";
 import { style } from "@vanilla-extract/css";
 import { calc } from "@vanilla-extract/css-utils";
-
-import { vars } from "../../components/styles";
 
 export const menuBar = style({
   display: "flex",

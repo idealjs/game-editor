@@ -1,9 +1,10 @@
+import { lightTheme } from "@idealjs/camphora-styled";
 import clsx from "clsx";
 
 import { appStyle } from "./App.css";
-import { lightTheme } from "./components/styles";
 import Layout from "./features/Layout";
 import Menubar from "./features/Menubar";
+import Workspace from "./features/Workspace";
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
       className={clsx(appStyle, lightTheme)}
     >
       <Menubar />
-      <Layout />
+      <Workspace />
+      {/* <Layout /> */}
     </div>
   );
 };

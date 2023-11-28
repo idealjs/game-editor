@@ -7,15 +7,6 @@ const menuItems: IMenuItem[] = [
     label: "File",
     subMenus: [
       {
-        label: "New File",
-        onClick: async () => {
-          const opfsRoot = await navigator.storage.getDirectory();
-          console.log(opfsRoot);
-        },
-      },
-      { label: "Open File" },
-      { label: "Open Folder" },
-      {
         label: "Open Recent",
         subMenus: [{ label: "abc" }, { label: "123" }, { label: "xxx" }],
       },

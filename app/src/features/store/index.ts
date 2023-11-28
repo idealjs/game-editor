@@ -79,9 +79,4 @@ export const { root: RootLayout, updateLayout } = createLayout(
   })
 );
 
-export const showMenu = createState<HTMLDivElement | null>(null);
-
-export const closeMenu = () => {
-  showMenu.val?.blur();
-  showMenu.val = null;
-};
+export * from "./menu";
